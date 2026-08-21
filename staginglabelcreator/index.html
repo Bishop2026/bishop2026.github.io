@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" charset="utf-8" src="js/staginglabelcreator.js" defer></script>
+</head>
+<body onload="main()">
+
+    <div id="content">
+        <h1 id="title"></h1>
+
+        <div id="label-range" class="inputs">
+            range:
+            <input id="label-from" type="number" value="001">
+            to
+            <input id="label-to" type="number" value="100">
+        </div>
+
+        <br>
+
+        <div id="prefix" class="inputs">
+            prefix (optional):
+            <input id="label-prefix" type="text">
+        </div>
+        <div id="suffix" class="inputs">
+            suffix (optional):
+            <input id="label-suffix" type="text">
+        </div>
+
+        <br>
+
+        <div id="file-name" class="inputs">
+            file name (optional):
+            <input id="label-file-name" type="text">
+            .zpl
+        </div>
+
+        <br>
+
+        <div id="download-zpl" class="inputs">
+            <button onclick="downloadButtonClicked()">download ZPL</button>
+        </div>
+
+    </div>
+
+    <div class="footer" id="version"></div>
+    <div class="footer" id="author"></div>
+
+</body>
+</html>
